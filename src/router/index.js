@@ -12,11 +12,11 @@ Vue.use(Router)
 
 // 通过...运算符把所有的路由拼接
 export default new Router({
-  ...UserRoute,
-  ...MessageRoute,
-  ...PlantRoute,
-  ...SquareRoute,
   routes: [
+    ...UserRoute,
+    ...MessageRoute,
+    ...SquareRoute,
+    ...PlantRoute,
     {
       path: '/',
       redirect: '/Home'

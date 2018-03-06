@@ -5,7 +5,7 @@
   "author": "frankwu <frank994@qq.com>",
   "private": true,
   "scripts": {
-    "launch": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "server": "node server/app.js",
     "build": "node build/build.js"
