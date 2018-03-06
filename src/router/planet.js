@@ -1,9 +1,9 @@
-import Plant from '@/pages/plant'
+import Plant from '@/pages/planet'
 // 这里定义对应的路径,子路径定义在children里面
 export default [
 	{
-		path: '/plant',
-		name: 'plant',
+		path: '/planet',
+		name: 'planet',
 		component: Plant,
 		children:[
 			// {
