@@ -5,7 +5,6 @@
     </div>
     <div class="tabWrapper">
       <TabBar></TabBar>
-
     </div>
   </div>
 </template>
