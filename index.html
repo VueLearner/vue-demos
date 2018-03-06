@@ -8,5 +8,19 @@
   <body>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+  <script>
+    // rem适配
+    ;(function() {
+    function setFontSize() {
+    var docEl = document.documentElement
+    var width = docEl.getBoundingClientRect().width
+    // fontSize = 宽度变化比例 * 基准字体大小 100px
+    var fontSize = (width / 750) * 100
+    docEl.style.fontSize = fontSize + 'px'
+    }
+    setFontSize()
+    window.addEventListener('resize', setFontSize)
+    })()
+  </script>
   </body>
 </html>
