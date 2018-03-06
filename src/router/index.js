@@ -19,12 +19,7 @@ export default new Router({
     ...PlantRoute,
     {
       path: '/',
-      redirect: '/Home'
-    },
-    {
-      path: '/Home',
-      name: 'user',
-      component: Home
-    },
+      redirect: '/plant'
+    }
   ]
 })

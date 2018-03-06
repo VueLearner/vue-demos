@@ -1,7 +1,7 @@
 <template>
 
   <div id="wrapper">
-      Im Favorite
+      Im MEssage
   </div>
 
 </template>

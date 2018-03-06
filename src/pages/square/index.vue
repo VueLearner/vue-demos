@@ -1,7 +1,7 @@
 <template>
 
   <div id="wrapper">
-      Im message
+      Im SQUARe
   </div>
 
 </template>

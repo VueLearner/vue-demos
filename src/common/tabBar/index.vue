@@ -18,10 +18,10 @@
 	  data() {
 	    return {
 	      tabList: [
-          {text: '首页', route: 'user'},
-          {text: '消息', route: 'message'},
-          {text: '日历', route: 'calender'},
-          {text: '我的收藏', route: 'message'},
+          {text: '星球', route: 'plant'},
+          {text: '广场', route: 'square'},
+          {text: '聊天', route: 'message'},
+          {text: '用户', route: 'user'},
         ],
         numList: [2, 4, 6, 7],
         selectedIndex: 0

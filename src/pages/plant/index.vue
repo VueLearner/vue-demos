@@ -1,7 +1,7 @@
 <template>
 
   <div id="wrapper">
-    Im Calender
+    Im PLAnt
   </div>
 
 </template>
