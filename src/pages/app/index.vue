@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import TabBar from '@c/TabBar'
+import TabBar from '@c/tabBar'
 export default {
   name: 'App',
   components: {

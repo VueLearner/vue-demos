@@ -1,14 +1,21 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '@/pages/Home'
-import Message from '@/pages/Message'
-import Favorite from '@/pages/Favorite'
-import Calender from '@/pages/Calender'
+import UserRoute from './user'
+import MessageRoute from './message'
+import PlantRoute from './plant'
+import SquareRoute from './square'
+
+
 
 
 Vue.use(Router)
 
+// 通过...运算符把所有的路由拼接
 export default new Router({
+  ...UserRoute,
+  ...MessageRoute,
+  ...PlantRoute,
+  ...SquareRoute,
   routes: [
     {
       path: '/',
@@ -16,24 +23,8 @@ export default new Router({
     },
     {
       path: '/Home',
-      name: 'home',
+      name: 'user',
       component: Home
     },
-    {
-      path: '/Message',
-      name: 'message',
-      component: Message
-    },
-    {
-      path: '/Favorite',
-      name: 'favorite',
-      component: Favorite
-    },
-    {
-      path: '/Calender',
-      name: 'calender',
-      component: Calender
-    },
-
   ]
 })

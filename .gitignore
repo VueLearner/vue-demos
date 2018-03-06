@@ -59,3 +59,4 @@ typings/
 # webstorm user setting file
 .idea/
 .idea/dictionaries/
+.idea/workspace.xml
