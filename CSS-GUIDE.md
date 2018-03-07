@@ -141,6 +141,7 @@
   * margin, padding
   * border
 
+
 ### 表现性属性：
   * background, border
   * font, text
