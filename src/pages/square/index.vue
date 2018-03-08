@@ -2,9 +2,36 @@
 
   <div id="wrapper">
       <div class="top">
-
+           <div class="top-one">
+              <img class="voice-logo" src="../../assets/imgs/voice.png">
+           </div>
+           <div class="top-two">
+              <div class="choose">
+                  <ul class="text-title">
+                      <li class="text">关注</li>
+                  </ul>
+                  <ul class="dot">
+                      <li class="dot-dom">。</li>
+                      <li class="dot-dom">·</li>
+                      <li class="dot-dom">。</li>
+                  </ul>
+              </div>
+           </div>
       </div>
       <div class="container">
+        <div class="search">
+            <div class="search-in">
+                <div class="search-logo-container">
+                   <img class="search-logo" src="../../assets/imgs/search.png"/>
+                </div>
+               <div class="search-font">
+                   <p class="search-font-p" >试试搜索beatbox</p>
+               </div>
+            </div>
+        </div>
+        <div class="moment">
+            <Moment></Moment>
+        </div>
 
 
       </div>
@@ -14,17 +41,112 @@
 </template>
 
 <script>
+    import Moment from './component/index.vue'
 	export default {
+        name:"moment",
 	    data(){
 	        return{
 
+
             }
+        },
+        components:{
+            Moment
         }
-    };
+
+    }
 </script>
 <style lang="stylus" scoped>
   @import '../../common/colors.styl'
   @import '../../common/values.styl'
+  #wrapper
+    .top
+        width 100%
+        height 90px
+        position absolute
+        background-color white
+        box-shadow 0px 5px 20px bgcor
+        z-index 99
+        .top-one
+            width 100%
+            height 40%
+            background-color white
+            .voice-logo
+                width 20px
+                height 20px
+                position absolute
+                right 10px
+                top 10px
+        .top-two
+            width 100%
+            height 60%
+            .choose
+                width 60px
+                height 100%
+                margin-left 10px
+                .text-title
+                    width 100%
+                    height 60%
+                    /*background-color beige*/
+                    text-align center
+                    line-height 40px
+                    .text
+                       font-size fth3
+            .dot
+                display flex
+                flex-direction row
+                justify-content space-between
+                /*background-color yellow*/
+                .dot-dom
+                    flex 1
+                    text-align center
+                    /*background-color salmon*/
+    .container
+        width 100%
+        height 620px
+        overflow-y auto
+        z-index 1
+        .search
+            width 100%
+            height 40px
+            margin-top 90px
+            background-color whitesmoke
+            position absolute
+            .search-in
+                width 340px
+                height 26px
+                background-color white
+                position relative
+                margin 7px auto
+                border-radius 5px
+                .search-logo-container
+                    float left
+                    margin 3px 10px
+                    .search-logo
+                      width 20px
+                      height 20px
+                .search-font
+                    float left
+                    line-height 26px
+                    .search-font-p
+                        font-size ftmd
+                        color gary
+        .moment
+           width 100%
+           height 500px
+           background-color seashell
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
