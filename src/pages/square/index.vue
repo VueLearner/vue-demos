@@ -30,7 +30,7 @@
             </div>
         </div>
         <div class="moment">
-            <Moment></Moment>
+            <Moment/>
         </div>
 
 

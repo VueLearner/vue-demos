@@ -1,6 +1,8 @@
 <template>
    <div>
-      sssssss
+      <p>
+          sssssss
+      </p>
    </div>
 </template>
 <script>
