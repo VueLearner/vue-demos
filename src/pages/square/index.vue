@@ -29,14 +29,14 @@
         </div>
       </div>
      <div class="moment">
-        <Moment/>
+        <!--//<Moment/>-->
       </div>
       </div>
   </div>
 </template>
 
 <script>
-  import Moment from './component/index.vue'
+  //import Moment from './component/index.vue'
 	export default {
     name:"moment",
 	  data(){
@@ -45,7 +45,7 @@
       }
     },
     components:{
-      Moment
+     // Moment
     }
   }
 </script>
