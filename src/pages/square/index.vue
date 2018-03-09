@@ -50,8 +50,10 @@
   }
 </script>
 <style lang="stylus" scoped>
-  @import '../../common/colors.styl'
-  @import '../../common/values.styl'
+// 因为标签有scoped所以样式被定义成局部化的了
+// 只要小心一个页面的定义不要有相同的，就可以以这种形式定义样式，避免嵌套
+@import '../../common/colors.styl'
+@import '../../common/values.styl'
 #wrapper
   .top
     width 100%
