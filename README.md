@@ -1,4 +1,4 @@
-# lv-simple-demo
+#  Vue-Learner-Demos
 
 > a simple demo for ours
 
@@ -24,8 +24,10 @@ npm run build --report
   # git commit -m'這裡填寫你的步驟註釋' // 提交你的所有代碼至本地倉庫
   # git pull // 拉取線上代碼庫代碼
   # git push // 提交你的代碼至線上代碼庫
+
+  # git checkout -b develop //新建一个分支并切换到该分支工作
 ```
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
 
 
 ## 文件夹详解
