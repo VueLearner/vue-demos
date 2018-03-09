@@ -119,7 +119,7 @@
     float left
     line-height 26px
     .search-font-p
-      font-size ftmd
+      font-size ftls
       color gary
 .moment
   width 100%
