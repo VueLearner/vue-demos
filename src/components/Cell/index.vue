@@ -10,7 +10,7 @@
       name: {
         type: String,
         default: '例子',
-        validator: val => val !== ''
+        validator: (val) => val !== ''
       }
     },
     data() {
@@ -19,7 +19,7 @@
     },
     methods: {
       handleClick() {
-        let params = { name: 'Tom', age: 18 }
+        let params = { name: 'aaaaa', age: 18 }
         this.$emit('click', params) // 用$emit提交一个事件给父组件
       }
     }

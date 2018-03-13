@@ -10,9 +10,7 @@
               <li class="text">关注</li>
             </ul>
             <ul class="dot">
-              <li class="dot-dom">。</li>
-              <li class="dot-dom">·</li>
-              <li class="dot-dom">。</li>
+              <li class="dot-dom" v-for="(item, index) in domList" :key="index">{{item}}</li>
             </ul>
           </div>
         </div>
@@ -29,23 +27,20 @@
         </div>
       </div>
      <div class="moment">
-        <!--//<Moment/>-->
-      </div>
+    </div>
       </div>
   </div>
 </template>
 
 <script>
-  //import Moment from './component/index.vue'
-	export default {
-    name:"moment",
-	  data(){
-      return {
 
+	export default {
+	  data() {
+      return {
+        domList: ['。', '.', '。']
       }
     },
     components:{
-     // Moment
     }
   }
 </script>

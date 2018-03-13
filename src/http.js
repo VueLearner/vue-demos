@@ -1,5 +1,7 @@
 import axios from 'axios'
 
+// 默认的路径
+axios.defaults.baseURL = 'http://localhost:3000';
 // 允许跨域情况下携带cookie
 axios.defaults.withCredentials = true
 // 设置超时时间
