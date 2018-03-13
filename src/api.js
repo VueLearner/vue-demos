@@ -11,5 +11,5 @@ export default(config => {
 	}, {})
 })({
   // example api
-  "getExampleData": "/api/data" 
+  "getExampleData": "/api/question" 
 })

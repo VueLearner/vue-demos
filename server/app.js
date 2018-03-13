@@ -5,15 +5,12 @@ const path = require('path')
 var app = express()
 const router = express.Router()
 
-//设置跨域访问
-router.all('*', function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*")
-    res.header("Access-Control-Allow-Headers", "X-Requested-With")
-    res.header("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS")
-    res.header("X-Powered-By",' 3.2.1')
-    res.header("Content-Type", "application/jsoncharset=utf-8")
-    next()
-})
+
+// app.use('*', function(req, res, next) {
+    
+//     // res.header("Content-Type", "application/jsoncharset=utf-8")
+//     next()
+// })
 // app.all('*',function (req, res, next) {
 //   res.header('Access-Control-Allow-Origin', 'http://localhost:8080')
 //   res.header('Access-Control-Allow-Headers', 'Content-Type')
@@ -21,6 +18,12 @@ router.all('*', function(req, res, next) {
 // 　next()　
 // })
 function handler(req, res, next) {
+    //设置跨域访问
+    res.header("Access-Control-Allow-Origin", "http://localhost:8080")
+    res.header("Access-Control-Allow-Headers", "X-Requested-With")
+    res.header("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS")
+    res.header('Access-Control-Allow-Credentials', true)
+    res.header("X-Powered-By",' 3.2.1')
     try {
       var conf = utils.readJSON(path.join(__dirname) + req.path + '.json')
     } catch (err) {
@@ -38,7 +41,7 @@ function handler(req, res, next) {
     }, conf.delay)
 }
 app.use(bodyParser.json())
-app.use('*', handler)
+app.all('*', handler)
 app.get('/', function(req, res){
   res.send('hello world');
 });
